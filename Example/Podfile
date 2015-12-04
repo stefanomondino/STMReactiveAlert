@@ -1,12 +1,3 @@
 source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
+pod "STMReactiveAlert", :path => "../"
 
-target 'STMReactiveAlert_Example', :exclusive => true do
-  pod "STMReactiveAlert", :path => "../"
-end
-
-target 'STMReactiveAlert_Tests', :exclusive => true do
-  pod "STMReactiveAlert", :path => "../"
-
-  
-end

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +17,79 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC4-re-aL2">
+                                <rect key="frame" x="280" y="285" width="41" height="30"/>
+                                <animations/>
+                                <state key="normal" title="OPEN"/>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wC4-re-aL2" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="jz3-0p-Pui"/>
+                            <constraint firstItem="wC4-re-aL2" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="wW0-YR-u5i"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btn_open" destination="wC4-re-aL2" id="ZdC-DD-5dW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="433"/>
+        </scene>
+        <!--Alert View Controller-->
+        <scene sceneID="odF-n1-OTf">
+            <objects>
+                <viewController storyboardIdentifier="Alert1" id="RC7-pL-8jt" customClass="STMAlertViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gye-5g-lzF"/>
+                        <viewControllerLayoutGuide type="bottom" id="jfd-fB-RqW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pBx-So-ml3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nI-F3-WPe">
+                                <rect key="frame" x="277" y="497" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Cancel"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Hi! I'm an hard-coded string but you can customize me in your alert view model" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyS-kn-QM9">
+                                <rect key="frame" x="20" y="50" width="560" height="417"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWW-NU-nRa">
+                                <rect key="frame" x="277" y="540" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FyS-kn-QM9" firstAttribute="leading" secondItem="pBx-So-ml3" secondAttribute="leadingMargin" id="36m-H2-4qp"/>
+                            <constraint firstItem="5nI-F3-WPe" firstAttribute="centerX" secondItem="FyS-kn-QM9" secondAttribute="centerX" id="WU2-D8-5aT"/>
+                            <constraint firstItem="hWW-NU-nRa" firstAttribute="top" secondItem="5nI-F3-WPe" secondAttribute="bottom" constant="13" id="a97-QF-n8P"/>
+                            <constraint firstItem="FyS-kn-QM9" firstAttribute="top" secondItem="gye-5g-lzF" secondAttribute="bottom" constant="30" id="d6z-cl-KlX"/>
+                            <constraint firstItem="FyS-kn-QM9" firstAttribute="centerX" secondItem="pBx-So-ml3" secondAttribute="centerX" id="jKK-2O-yxy"/>
+                            <constraint firstItem="hWW-NU-nRa" firstAttribute="centerX" secondItem="5nI-F3-WPe" secondAttribute="centerX" id="siS-3d-ZTr"/>
+                            <constraint firstItem="jfd-fB-RqW" firstAttribute="top" secondItem="hWW-NU-nRa" secondAttribute="bottom" constant="30" id="xg0-2d-GQS"/>
+                            <constraint firstItem="5nI-F3-WPe" firstAttribute="top" secondItem="FyS-kn-QM9" secondAttribute="bottom" constant="30" id="zR7-5h-C4W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_cancel" destination="5nI-F3-WPe" id="hst-Ds-XFH"/>
+                        <outlet property="btn_confirm" destination="hWW-NU-nRa" id="nj0-To-9zp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="giw-zS-EsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999" y="451"/>
         </scene>
     </scenes>
 </document>

@@ -9,5 +9,6 @@
 @import UIKit;
 
 @interface STMViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *btn_open;
 
 @end
