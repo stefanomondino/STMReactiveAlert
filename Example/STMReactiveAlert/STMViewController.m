@@ -7,19 +7,13 @@
 //
 
 #import "STMViewController.h"
-#import <UIViewController+STMReactiveAlert.h>
+#import <STMAlertViewModel.h>
+#import <UIViewController+STMReactiveAlertPresenting.h>
 
 
 @interface STMViewController ()
 
 @end
-
-
-
-
-
-
-
 
 @implementation STMViewController
 
@@ -28,19 +22,24 @@
     @weakify(self);
     self.btn_open.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
         @strongify(self);
+        return [self rac_alertSignal];
+    }];
+}
+
+- (RACSignal*) rac_alertSignal {
+    @weakify(self);
+    return [RACSignal defer:^RACSignal *{
+        
+        
         STMAlertViewModel* vm = [STMAlertViewModel new];
         vm.stm_storyboardSceneIdentifier = @"Alert1";
         vm.stm_storyboardName = @"Main";
         return [[[self rac_showAlertWithViewModel:vm] ignore:@0] flattenMap:^RACStream *(id value) {
             @strongify(self);
-            STMAlertViewModel* vm = [STMAlertViewModel new];
-            vm.stm_storyboardSceneIdentifier = @"Alert1";
-            vm.stm_storyboardName = @"Main";
-            return [self rac_showAlertWithViewModel:vm];
+            return [self rac_alertSignal];
         }];
     }];
-    
-    
 }
+
 
 @end

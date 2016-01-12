@@ -9,21 +9,7 @@
 #import "STMAlertViewModel.h"
 
 
-@implementation NSObject(STMAlertViewModel)
-@dynamic stm_storyboardName,stm_rac_selectionCommand,stm_storyboardSceneIdentifier;
 
-- (instancetype)stm_alertViewModel_init {
-
-    self.stm_rac_selectionCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-        return [self stm_rac_selectionSignalWithInput:input];
-    }];
-    return self;
-}
-- (RACSignal*) stm_rac_selectionSignalWithInput:(id) input {
-    return  [RACSignal return:input];
-    
-}
-@end
 
 
 

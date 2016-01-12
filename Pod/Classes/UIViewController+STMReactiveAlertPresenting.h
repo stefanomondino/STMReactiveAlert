@@ -10,7 +10,7 @@
 #import "STMAlertViewModel.h"
 #import "STMAlertViewController.h"
 #import <MZFormSheetPresentationViewController.h>
-@interface UIViewController (STMReactiveAlert)
+@interface UIViewController (STMReactiveAlertPresenting)
 - (void) showAlertWithViewModel:(id<STMAlertViewModelProtocol>) viewModel;
 - (RACSignal*) rac_showAlertWithViewModel:(id<STMAlertViewModelProtocol>) viewModel;
 @end

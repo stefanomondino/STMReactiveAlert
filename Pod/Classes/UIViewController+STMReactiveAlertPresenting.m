@@ -6,10 +6,10 @@
 //
 //
 
-#import "UIViewController+STMReactiveAlert.h"
+#import "UIViewController+STMReactiveAlertPresenting.h"
 @import UIKit;
 
-@implementation UIViewController(STMReactiveAlert)
+@implementation UIViewController(STMReactiveAlertPresenting)
 
 - (RACSignal*) rac_showAlertWithViewModel:(id<STMAlertViewModelProtocol>) viewModel{
     @weakify(self);
