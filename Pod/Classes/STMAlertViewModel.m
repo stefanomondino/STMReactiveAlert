@@ -8,11 +8,6 @@
 
 #import "STMAlertViewModel.h"
 
-
-
-
-
-
 @implementation STMAlertViewModel
 @synthesize stm_storyboardName,stm_rac_selectionCommand,stm_storyboardSceneIdentifier;
 

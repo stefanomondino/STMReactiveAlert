@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "STMAlertViewModel.h"
-#import "UIViewController+STMReactiveAlertPresented.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "NSObject+STMAlertViewModelPresented.h"
 @protocol STMAlertViewControllerProtocol <NSObject>
 
 @required

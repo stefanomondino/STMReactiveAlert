@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "STMAlertViewModel.h"
-#import "STMAlertViewController.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "NSObject+STMAlertViewModelPresented.h"
 #import "MZFormSheetPresentationViewController.h"
 @interface UIViewController (STMReactiveAlertPresenting)
 - (void) showAlertWithViewModel:(id<STMAlertViewModelProtocol>) viewModel;
