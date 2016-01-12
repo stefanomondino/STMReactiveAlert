@@ -8,7 +8,7 @@
 
 #ifndef STMReactiveAlert_h
 #define STMReactiveAlert_h
-
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "UIViewController+STMReactiveAlertPresented.h"
 #import "UIViewController+STMReactiveAlertPresenting.h"
 #import "NSObject+STMAlertViewModelPresented.h"

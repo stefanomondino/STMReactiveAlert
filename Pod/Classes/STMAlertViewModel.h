@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "NSObject+STMAlertViewModelPresented.h"
-
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface STMAlertViewModel : NSObject
 @end

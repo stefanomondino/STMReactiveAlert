@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ReactiveCocoa.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @protocol STMAlertViewModelProtocol <NSObject>
 @required

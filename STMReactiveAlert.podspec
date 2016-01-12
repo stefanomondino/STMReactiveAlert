@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "STMReactiveAlert"
-  s.version          = "0.1.4"
+  s.version          = "0.1.5"
   s.summary          = "Display alerts with MVVM, ReactiveCocoa and MZFormSheetPresentationController"
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'STMReactiveViewController'
+  s.dependency 'ReactiveCocoa', '~>2.5'
   s.dependency 'MZFormSheetPresentationController'
 
 end
