@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "ReactiveCocoa.h"
 #import "NSObject+STMAlertViewModelPresented.h"
 #import "MZFormSheetPresentationViewController.h"
 #import "UIViewController+STMReactiveAlertPresented.h"
