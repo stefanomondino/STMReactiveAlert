@@ -7,6 +7,7 @@
 //
 
 #import "UIViewController+STMReactiveAlertPresenting.h"
+
 @import UIKit;
 
 @implementation UIViewController(STMReactiveAlertPresenting)
