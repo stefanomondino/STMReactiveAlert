@@ -7,8 +7,8 @@
 //
 
 #import "STMViewController.h"
-#import <STMAlertViewModel.h>
-#import <UIViewController+STMReactiveAlertPresenting.h>
+#import <STMReactiveAlert/STMAlertViewModel.h>
+#import <STMReactiveAlert/UIViewController+STMReactiveAlertPresenting.h>
 
 
 @interface STMViewController ()

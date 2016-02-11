@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CD86E128983A179CBBE62C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1356909B8C585112281FB0C /* libPods.a */; };
+		4C76C571A0263391E1668C3B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBC4BD04D6631039B63DA4A /* Pods.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,6 +23,7 @@
 /* Begin PBXFileReference section */
 		05A42560882637B33C9DF4EA /* Pods_STMReactiveAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STMReactiveAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08207057F10A89212D94899F /* Pods_STMReactiveAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STMReactiveAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FBC4BD04D6631039B63DA4A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1511CF388792DE43B197BAC0 /* STMReactiveAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = STMReactiveAlert.podspec; path = ../STMReactiveAlert.podspec; sourceTree = "<group>"; };
 		18FD18D85C68F3E4885E765B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* STMReactiveAlert_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STMReactiveAlert_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +51,6 @@
 		A55B894A63126DC20C6E9D49 /* Pods-STMReactiveAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STMReactiveAlert_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STMReactiveAlert_Example/Pods-STMReactiveAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C3237A38A53EF56FF452D554 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C5EBE556D2EF4C9225269123 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		D1356909B8C585112281FB0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19F5D0E927AD3532FDEF4CE /* Pods-STMReactiveAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STMReactiveAlert_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-STMReactiveAlert_Example/Pods-STMReactiveAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E911C5C225F18B3639EF285C /* Pods-STMReactiveAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STMReactiveAlert_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-STMReactiveAlert_Tests/Pods-STMReactiveAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +63,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				1CD86E128983A179CBBE62C9 /* libPods.a in Frameworks */,
+				4C76C571A0263391E1668C3B /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +112,7 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				08207057F10A89212D94899F /* Pods_STMReactiveAlert_Example.framework */,
 				05A42560882637B33C9DF4EA /* Pods_STMReactiveAlert_Tests.framework */,
-				D1356909B8C585112281FB0C /* libPods.a */,
+				0FBC4BD04D6631039B63DA4A /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
